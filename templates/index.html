@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Captioning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"   href="{{ url_for('static', filename='stylesheets/style.css') }}">
+   <!-- <link rel="stylesheet"   href="style.css">-->
+</head>
+<body>
+
+
+	<section class="main">
+    <div class="head">
+        <div class="one">
+        <h2>Image Captioning</h2>
+		</div>
+
+
+     <div class="two">
+		<form method="POST" action="/" enctype="multipart/form-data"> 
+			<input  type="file" name="userfile" placeholder="Your image" id="file" hidden>
+            <label for="file">Choose File</label>
+			<button type="submit" class="button" > Submit</button>
+		</form>
+
+	</div>
+         <div>
+
+                {% if your_caption %}
+             <img src="{{your_caption['image']}}" class="image">
+             <h1 class="caption">Generated Caption : <i> {{your_caption['caption']}} </i></h1>
+            {% else %}
+            <p class="para">{{output}}</p>
+            {% endif %}
+    </div>
+        </div>
+   
+    </section>
+
+</body>
+</html>

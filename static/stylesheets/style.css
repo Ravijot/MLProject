@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(f1d0d572816947.5c2bcd89d519b.gif);
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+  
+}
+.main{
+    margin: 4% 30%;
+    height: auto;
+    
+}
+.head{
+  
+    padding: 2%;
+    border-radius: 0.9%;
+    background-image: url(Venice%20Blue.jpg);
+}
+.one{
+    margin-left: 30%;
+    color: white;
+    font-size: 16px;
+}
+.two{
+    margin-left: 27%;
+    
+}
+.input{
+    border: none;
+}
+label {
+  background-image: url(Firewatch.jpg);
+  color: white;
+  padding: 2%;
+  font-size: 16px;
+  border-radius: 2%;
+  cursor: pointer;
+  font-size:16px;
+    
+}
+.button
+{
+    background-image: url(Parklife.jpg); /* Green */
+  border: none;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+   width: 30%;
+    cursor: pointer;
+}
+.caption
+{
+    color: beige;
+    font-size: 20px;
+}
+.image{
+    width: 100%;
+}
+.para{
+color:white;
+margin-left:30%;
+}
+@media (max-width:400px)
+{
+  .main{
+    width:90%;
+    margin:15% 6%
+  }
+  .one{
+    margin-left: 25%;
+    }
+}
+@media (max-width:320px)
+{
+ .one{
+    margin-left: 18%;
+    }
+    .two{
+    margin-left: 24%;
+    
+}
+}
+@media (max-width:420px)
+{
+   .main{
+    width:90%;
+    margin:15% 6%
+  }
+ .one{
+    margin-left: 23%;
+    }
+    .two{
+    margin-left: 24%;
+    
+}
+}
