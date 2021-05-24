@@ -11,7 +11,7 @@ def hello():
     return render_template("index.html")
 
 
-@app.route('/', methods=['POST'])
+@app.route('/sub', methods=['POST'])
 def marks():
     if request.method == 'POST':
         if request.files['userfile'].filename == '':
@@ -33,5 +33,5 @@ def marks():
 
 if __name__ == '__main__':
     #app.debug = True
-    # due to versions of keras we need to pass another paramter threaded = Flase to this run function
-    app.run(debug=True,host='127.0.0.1',port=6857)
+    # due to versions of keras we need to pass another paramter threaded = False to this run function
+    app.run(debug=True)
